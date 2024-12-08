@@ -28,9 +28,9 @@ const myFunction=function()
 {
     console.log("Hello World");
 }
-console.log(typeof myFunction);
-console.log(typeof id);
-console.log(typeof null);
+// console.log(typeof myFunction);
+// console.log(typeof id);
+// console.log(typeof null);
 
 // Return type of variables in JavaScript
 // 1) Primitive Datatypes
@@ -47,6 +47,22 @@ console.log(typeof null);
 //        Function  =>  function
 //        Object  =>  object
 
+
+// ------------------------------Memory--------------------------
+//stack(Primitive), Heap(Non-Primitive) that means primitive datatype use stack memory and non-primitive datatype use heap memory
+let myYoutube="hello" 
+let anotherName=myYoutube
+anotherName="chaiaurcode"
+console.log(anotherName);
+
+let user={
+    email:"user@gmail.com",
+    UPI:"user@oksbi"
+}
+let usertwo=user
+usertwo.email="usertwo@gmail.com"
+console.log(usertwo.email);
+console.log(user.email);
 
 
 
