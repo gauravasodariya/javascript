@@ -37,7 +37,7 @@ const user={
 
 // const addTwo = (num1,num2) => num1+num2
 
-//if we use parenthesis no use of return keyword and if we use curlybrcket then use return keyword
+//if we use parenthesis no use of return keyword and if we use curlybracket then use return keyword
 // const addTwo = (num1,num2) => (num1+num2)
 // console.log(addTwo(4,6))
 
