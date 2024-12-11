@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body style="background-color:rgb(39, 39, 39);color: rgb(227, 234, 240);">
+    <ul class="name1">
+        <li>Javascript</li>
+    </ul>
+</body>
+<script>
+    function addLanguage(name1)
+    {
+        const li=document.createElement("li");
+        li.innerHTML=`${name1}`
+        document.querySelector('.name1').
+        appendChild(li)
+    }
+    addLanguage("python");
+
+
+    function addOptimize(name1)
+    {
+        const li=document.createElement("li")
+        li.appendChild(document.createTextNode(name1))
+        document.querySelector('.name1').appendChild(li)
+    }
+    addOptimize("Swift")
+
+
+
+    //Edit value
+    const edit= document.querySelector('li:nth-child(2)')
+//  edit.innerHTML="Java" OR
+    const newLi = document.createElement('li')
+    newLi.textContent="java"
+    edit.replaceWith(newLi)
+
+//Edit
+const firstlan = document.querySelector('li:first-child')
+firstlan.outerHTML='<li>TypeScript</li>'
+
+//remove value
+const lastlan=document.querySelector('li:last-child')
+lastlan.remove();
+</script>
+</html>
