@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Javascript</h2>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    //through parameter
+    // const sayName=function(str){
+    //     console.log(str); 
+    // }
+    // setInterval(sayName,1000,'hii');
+
+    const sayName=function(){
+        console.log("Hello"); 
+    }
+    const stops=setInterval(sayName,1000);
+    clearInterval(stops);
+</script>
+</html>
